@@ -1,4 +1,3 @@
-/*
 // Project 2: Javascript “Hot or Cold”
 
 // OVERVIEW
@@ -32,4 +31,3 @@
 // If you get stuck... 
 // http://philiplang.github.io/HuckleBuckle/index.html
 // http://raddevon.github.io/huckle-buckle-beanstalk/
-*/
