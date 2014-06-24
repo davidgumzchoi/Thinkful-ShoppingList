@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /*
 >>>>>>> 601847c... fixed broken repository HotOrCold
+=======
+>>>>>>> 0392dc2... just some check in
 // Project 2: Javascript “Hot or Cold”
 
 // OVERVIEW
@@ -35,8 +38,12 @@
 // If you get stuck... 
 // http://philiplang.github.io/HuckleBuckle/index.html
 <<<<<<< HEAD
+<<<<<<< HEAD
 // http://raddevon.github.io/huckle-buckle-beanstalk/
 =======
 // http://raddevon.github.io/huckle-buckle-beanstalk/
 */
 >>>>>>> 601847c... fixed broken repository HotOrCold
+=======
+// http://raddevon.github.io/huckle-buckle-beanstalk/
+>>>>>>> 0392dc2... just some check in
