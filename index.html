@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<link href='http://fonts.googleapis.com/css?family=Lobster|Titillium+Web' rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css"/>
   	<link rel="stylesheet" type="text/css" href="css/main.css"/>
   </head>
   <body>
+  	<form>
+	  <h1><span class="red">Hot</span> or <span class="blue">Cold</span></h1>
+	  <p>
+	    <label>Guess a number between 1 and 100</label>
+  	    <input type="text" name="guess" id="guess">
+  	    <span class="tip"></span>
+  	    <span class="help">Enter valid integer between 1 and 100</span>
+  	  </p>
+  	  <p class="button">
+  	    <button type="submit">Guess</button>
+  	    <button type="reset">Reset</button>
+  	  </p>
+  	</form>
+  	<div class="response"></div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
   </body>
