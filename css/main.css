@@ -27,7 +27,7 @@ form {
 	margin: 125px auto 0;
 	min-height: 301px;
 	padding: 25px;
-	width: 350px;
+	width: 375px;
 }
 
 label {
@@ -94,7 +94,7 @@ button {
 	font-size: 20px;
 	font-family: "Titillium Web";
 	outline: none;
-	padding: 10px 45px;
+	padding: 10px;
 }
 
 button.submit {
@@ -104,7 +104,7 @@ button.submit {
 
 footer {
 	margin: 20px auto 0;
-	width: 375px;
+	width: 425px;
 }
 
 button.cheat,
@@ -112,7 +112,7 @@ button.reset {
 	background: #c03;
 	box-shadow: 0 3px 0 0 #900;
 	margin: 0 5px;
-	padding: 10px 60px;
+	padding: 10px 65px;
 }
 
 .response,
