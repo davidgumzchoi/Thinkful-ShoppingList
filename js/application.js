@@ -81,8 +81,5 @@ $('.cheat').click(function(e) {
 // Assigns new hidden answer and empty's input
 $('.reset').click(function(e) {
 	e.preventDefault();
-	answer = Math.floor((Math.random() * 100) + 1);
-	$('.correct').text('');
-	$('.response').text('');
-	$('.input').val('').focus();
+	location.reload();
 });
