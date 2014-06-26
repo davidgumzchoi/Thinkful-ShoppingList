@@ -10,16 +10,19 @@
 	  <h1><span class="red">Hot</span> or <span class="blue">Cold</span></h1>
 	  <p>
 	    <label>Guess a number between 1 and 100</label>
-  	    <input type="text" name="guess" id="guess">
+  	    <input type="text">
   	    <span class="tip"></span>
-  	    <span class="help">Enter valid integer between 1 and 100</span>
+  	    <span class="help"></span>
   	  </p>
   	  <p class="button">
-  	    <button type="submit">Guess</button>
-  	    <button type="reset">Reset</button>
+  	    <button class="submit">Submit</button>
   	  </p>
+  	  <div class="response"></div>
   	</form>
-  	<div class="response"></div>
+  	<footer>
+		<button class="reset">Reset</button>
+		<button class="cheat">Cheat</button>
+	</footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
   </body>
