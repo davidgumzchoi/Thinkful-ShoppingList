@@ -22,7 +22,7 @@ function compareGuess(event) {
         $('.help').hide();
         // Increment number of guesses
         numberOfGuesses++;
-		if (previousGuess) {
+        if (previousGuess) {
             // Find distances of the current and previous guesses from the actual number
             var previousDistance = Math.abs(answer - previousGuess);
             var currentDistance = Math.abs(answer - guess);
@@ -30,9 +30,9 @@ function compareGuess(event) {
             if (guess === previousGuess) {
                 $('.almost').text("Same guess!");
             } else if (currentDistance < previousDistance){
-                $('.almost').text("Getting warmer...");
+                $('.almost').text("Getting warmer...").css("color", "red");
             } else if (currentDistance > previousDistance) {
-                $('.almost').text("Getting colder...");
+                $('.almost').text("Getting colder...").css("color", "blue");
             } else {
                 $('.almost').text("Same distance...");
             }
@@ -46,17 +46,17 @@ function compareGuess(event) {
             $('.response').text('The number was ' + answer + '.');
             $('.almost').text('');
             if (numberOfGuesses === 1) {
-            	$('.almost').text('You got it on the first try!');
+            	$('.almost').text('You got it on the first try!').css("color", "");
             } else {
-            	$('.almost').text('You got it in ' + numberOfGuesses + ' guesses.');
+            	$('.almost').text('You got it in ' + numberOfGuesses + ' guesses.').css("color", "");
             }
         // Feedback for a low guess
-        } else if (answer > guess) {
-            $('.response').text('Higher than ' + guess + '!');
+    } else if (answer > guess) {
+        $('.response').text('Higher than ' + guess + '!');
         // Feedback for a high guess
-        } else {
-            $('.response').text('Lower than ' + guess + '!');
-        }
+    } else {
+        $('.response').text('Lower than ' + guess + '!');
+    }
         // Blank out the guess input field return focus
         $('#guess').val('').focus();
     } else {
