@@ -1,1 +1,207 @@
-/* style */
+/* Typography */
+body {
+	background: #EEE;
+	color: #757575;
+	font-family: "Source Sans Pro", Helvetica;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+	box-shadow: none;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	vertical-align: middle;
+}
+
+a {
+	border: 0;
+	color: #777;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+
+/* Header */
+.wrapper {
+	background: #fff;
+	border-bottom: 3px solid #ddd;
+	border: 0;
+	margin: 25px auto;
+	max-width: 80%;
+	overflow: hidden;
+	padding: 2% 5%;
+	position: relative;
+	text-align: center;
+	width: 500px;
+}
+
+#header {
+	padding-bottom: 20px;
+}
+
+.name {
+	color: #00a5cf;
+	font-family: "Oleo Script";
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+
+input {
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: 2px solid transparent;
+	line-height: normal;
+	overflow: visible;
+	padding: 14px 2%;
+}
+
+input:focus {
+	outline: 0;
+}
+
+input[type="submit"],
+.submit {
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 14px 0;
+}
+
+.add-wrapper, .to-do-wrapper {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.add-to-do {
+	background: #fff;
+	border-bottom-left-radius: 3px;
+	border-right: 2px solid #fff;
+	border-top-left-radius: 3px;
+	border: 2px solid #eee;
+	color: #757575;
+	float: left;
+	height: 18px;
+	margin: 0 -2px;
+	width: 63%;
+}
+
+.add-to-do:focus {
+	border: 2px solid #ddd;
+}
+
+input.add {
+	background-color: #00a5cf;
+}
+
+input.add:active {
+	background-color: #0095bb;
+}
+
+.submit {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	display: inline-block;
+	height: 50px;
+	width: 33%;
+}
+
+.to-do-wrapper {
+	background: #eee;
+	border-radius: 3px;
+	display: none;
+	margin: 10px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.to-do.item {
+	background: transparent;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	color: #757575;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	height: 16px;
+	margin-left: 45px;
+	padding-left: 0;
+	width: 88%;
+}
+
+.complete-item {
+	color: #757575;
+	cursor: pointer;
+	height: 48px;
+	left: 0;
+	position: absolute;
+	width: 45px;
+}
+
+.complete-item i {
+	font-size: 18px;
+	position: absolute;
+	right: 15px;
+	top: 15px;}
+
+.to-do-wrapper.completed {
+	background: #ddf8de;
+	-moz-transition: background .3s ease;
+	-ms-transition: background .3s ease;
+	-o-transition: background .3s ease;
+	-webkit-transition: background .3s ease;
+	transition: background .3s ease;
+}
+
+.completed .to-do.item,
+.completed .complete-item {
+	color: #3ca13c;
+	-moz-transition: color .3s ease;
+	-ms-transition: color .3s ease;
+	-o-transition: color .3s ease;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+}
+
+.to-do-wrapper.completed.about-to-delete {
+	background: #f8ddd4;
+}
+
+.completed.about-to-delete .complete-item,
+.completed.about-to-delete .to-do.item {
+	color: #a1543c;
+}
+
+.delete-completed {
+	-moz-transition: color .25s ease;
+	-ms-transition: color .25s ease;
+	-o-transition: color .25s ease;
+	-webkit-transition: color .25s ease;
+	color: #999;
+	cursor: pointer;
+	display: none;
+	float: right;
+	font-weight: 600;
+	margin: 0 auto;
+	padding: 20px 0 0;
+	transition: color .25s ease;
+}
+
+.delete-completed:hover {
+	color: #555;
+}
