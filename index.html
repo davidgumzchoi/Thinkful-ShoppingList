@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oleo+Script"/>
+  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"/>
   	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css"/>
   	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
   	<link rel="stylesheet" type="text/css" href="css/main.css"/>
   </head>
   <body>
+    <div class="wrapper">
+      <div id="header">
+        <h1 class="name">Shopping List</h1>
+        <div class="add-wrapper">
+          <input type="text" id="userInput" class="add-to-do" maxlength="50" placeholder="Enter a reminder here...">
+          <input type="submit" class="submit add" value="Add It">
+        </div>
+      </div>
+      <ul class="to-do-items-wrapper">
+        <li class="to-do-wrapper" style="display:list-item;">
+          <input type="text" class="to-do item" value="This is a to-do Shopping List application." readonly="">
+          <span class="userAction complete-item"><i class="fa fa-circle-o"></i></span>
+        </li>
+        <li class="to-do-wrapper" style="display:list-item;">
+          <input type="text" class="to-do item" value="You have 50 characters before you run out of room." readonly="">
+          <span class="userAction complete-item"><i class="fa fa-circle-o"></i></span>
+        </li>
+        <li class="to-do-wrapper" style="display:list-item;">
+          <input type="text" class="to-do item" value="Click anywhere on the item to mark it as complete." readonly="">
+          <span class="userAction complete-item"><i class="fa fa-circle-o"></i></span>
+        </li>
+        <li class="to-do-wrapper completed" style="display:list-item;">
+          <input type="text" class="to-do item" value="You can click it again to un-select it as well." readonly="">
+          <span class="userAction complete-item"><i class="fa fa-check"></i></span>
+        </li>
+        <li class="to-do-wrapper" style="display:list-item;">
+          <input type="text" class="to-do item" value="Then click 'Remove Selected' to remove them from the list." readonly="">
+          <span class="userAction complete-item"><i class="fa fa-circle-o"></i></span>
+        </li>
+      </ul>
+      <div class="delete-completed" style="display: block;"><i class="fa fa-trash-o"></i> Remove Selected</div>
+  	</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
   </body>
