@@ -1,4 +1,3 @@
-/* Typography */
 body {
 	background: #EEE;
 	color: #757575;
@@ -35,11 +34,8 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Header */
 .wrapper {
 	background: #fff;
-	border-bottom: 3px solid #ddd;
-	border: 0;
 	margin: 25px auto;
 	max-width: 80%;
 	overflow: hidden;
@@ -47,10 +43,6 @@ a:hover {
 	position: relative;
 	text-align: center;
 	width: 500px;
-}
-
-#header {
-	padding-bottom: 20px;
 }
 
 .name {
